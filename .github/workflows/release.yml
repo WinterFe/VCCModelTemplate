@@ -8,16 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 14
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: 'zip'
         filename: 'VCCModelTemplate.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-    
-    - name: Upload Release
-      uses: ncipollo/release-action@v1.12.0
+        
+    - uses: plutotcool/release@v1
       with:
-        artifacts: "VCCModelTemplate.zip"
-        token: ${{ secrets.GITHUB_TOKEN }}
-        tag: '*'
+        github_token:  ${{ secrets.GITHUB_TOKEN }}
+        npm_token: ${{ secrets.NPM_TOKEN }}

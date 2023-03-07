@@ -2,8 +2,6 @@ name: release
 
 on:
   push:
-    tags:
-    - '*'
 
 jobs:
   build:
@@ -22,3 +20,4 @@ jobs:
       with:
         artifacts: "VCCModelTemplate.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
+        tag: '*'

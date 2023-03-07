@@ -23,7 +23,7 @@ jobs:
     
       - name: Archive Release
         run: |
-          zip -r VCCModelTemplate_${{ env.SOURCE_TAG }}.zip ./
+          zip -r VCCModelTemplate.zip ./
         env:
           SOURCE_TAG: ${{ steps.branch_name.outputs.SOURCE_TAG }}
           

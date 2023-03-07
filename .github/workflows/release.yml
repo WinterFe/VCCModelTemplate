@@ -33,7 +33,7 @@ jobs:
         with:
           name: "VCCModelTemplate ${{ env.SOURCE_TAG }}"
           files: |
-            VCCModelTemplate_${{ env.SOURCE_TAG }}.zip
+            VCCModelTemplate.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SOURCE_TAG: ${{ steps.branch_name.outputs.SOURCE_TAG }}

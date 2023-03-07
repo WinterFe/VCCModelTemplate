@@ -1,0 +1,15 @@
+{
+    "name": "xyz.winterfe.vccboothtemplate",
+    "displayName": "VCC Booth Template",
+    "version": "main",
+    "unity": "2019.4",
+    "description": "A quick way to create projects for new booth models with the most popular shaders",
+    "author": {
+        "name": "WinterFe#2000",
+        "email": "winter@lunardev.group"
+    },
+    "vpmDependencies": {
+        "com.vrchat.avatars": ">=3.1.2"
+    },
+    "url": "https://github.com/WinterFe/VCCBoothTemplate/releases/main/VCC_Booth_Template.zip"
+}

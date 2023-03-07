@@ -17,8 +17,8 @@ jobs:
         type: 'zip'
         filename: 'VCCModelTemplate.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-        
-    - uses: plutotcool/release@v1
+    
+    - name: Publish Release
+      uses: dictav/github-action-release@v0.0.1
       with:
         github_token:  ${{ secrets.GITHUB_TOKEN }}
-        npm_token: ${{ secrets.NPM_TOKEN }}

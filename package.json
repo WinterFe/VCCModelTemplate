@@ -11,6 +11,5 @@
     "vpmDependencies": {
         "com.vrchat.avatars": ">=3.1.2"
     },
-    "legacyFolders": {},
     "url": "https://github.com/WinterFe/VCCModelTemplate/releases/latest/download/VCCModelTemplate.zip"
 }
